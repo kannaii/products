@@ -14,3 +14,9 @@ print(products)
 
 for p in products:
 	print(p[0], '的價格是', p[1])
+
+
+with open('products.csv', 'w', encoding='utf-8') as f: # encoding utf-8為最廣泛使用的編碼,可以讀取中文字
+	f.write('商品,價格\n')
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n')
