@@ -11,3 +11,6 @@ while True:
 	# p = [name, price] # 上面3行快寫成這一行
 	products.append([name, price]) #products.append(p) 再把小清單p放進大清單products # 上面4行快寫成這一行
 print(products)
+
+for p in products:
+	print(p[0], '的價格是', p[1])
